@@ -1,0 +1,43 @@
+/* Custom Scrollbar (Optional) */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ff2c1f;
+  border-radius: 5rem;
+}
+
+/* Reuse Bootstrap variables */
+:root {
+  --main-color: #ff2c1f;
+  --text-color: #020307;
+  --bg-color: #fff;
+}
+
+/* Hero section tweaks */
+#home h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #home h2 {
+    font-size: 2rem;
+  }
+}
+
+.card {
+  max-width: 270px;
+  text-align: center;
+  transition: 0.3s linear;
+}
+
+.card p {
+  color: white;
+
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
